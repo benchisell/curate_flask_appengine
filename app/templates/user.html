@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+	<div class="row">
+	  <div class="col-md-5">
+		  <h1>{{user}}</h1>
+	  </div>
+	</div>
+</div>
+
+<ul>
+    <h1 id="">User Page</h1>
+    {% for post in posts %}
+		{% include 'post.html' %}
+    {% endfor %}
+</ul>
+{% endblock %}

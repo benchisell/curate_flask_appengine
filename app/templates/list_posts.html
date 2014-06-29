@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+<ul>
+    <h1 id="">Home</h1>
+    {% for post in posts %}
+    	{% include 'post.html' %}
+    {% endfor %}
+</ul>
+</body>
+{% endblock %}
